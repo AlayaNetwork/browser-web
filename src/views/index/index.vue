@@ -314,8 +314,8 @@
             </li>
             <li
               class="cursor"
-              v-for="(item, index) in showedValidatorData"
-              :key="index"
+              v-for="(item) in showedValidatorData"
+              :key="item.nodeId"
               @click="goNodeDetail(item.nodeId)"
             >
               <div class="list-item item-left">
