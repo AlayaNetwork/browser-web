@@ -15,7 +15,7 @@
     </div>
     <div class="main table">
       <p class="main-title" v-html="$t('fund.pageTotal', [pageTotal])"></p>
-      <el-table :data="list" style="width: 100%" size="mini">
+      <el-table :data="list" style="width: 100%" size="mini" v-loading="loading">
         <el-table-column type="index" label="#" :index="indexMethod" width="50"></el-table-column>
         <el-table-column prop="address" :label="$t('fund.tAddress')" min-width="120">
           <template slot-scope="scope">
@@ -67,6 +67,7 @@ export default {
       currentPage: 1,
       pageSize: 20,
       pageTotal: 0,
+      loading: false,
     }
   },
   methods: {
@@ -82,6 +83,7 @@ export default {
       this.getList()
     },
     getList() {
+      this.loading = true
       apiService.more
         .queryFundAddress({
           pageNo: this.currentPage,
@@ -99,6 +101,9 @@ export default {
           } else {
             this.$message.error(errMsg)
           }
+        })
+        .finally(() => {
+          this.loading = false
         })
     },
   },
