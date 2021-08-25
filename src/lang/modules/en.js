@@ -651,12 +651,12 @@ export default {
   },
   fund: {
     title: "Foundation Address",
-    totalBalance: "Total Balance (LAT)",
-    totalLocked: "Total LockupBalance (LAT)",
+    totalBalance: "Total Balance (ATP)",
+    totalLocked: "Total LockupBalance (ATP)",
     pageTotal: `Totally <b class="black">{0}</b> addresses`,
     tAddress: "Address",
-    tBalance: "Balance (LAT)",
-    tLockedBalance: "Lockup Balance (LAT)"
+    tBalance: "Balance (ATP)",
+    tLockedBalance: "Lockup Balance (ATP)"
   },
   ...enLocale
 };

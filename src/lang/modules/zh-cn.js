@@ -643,12 +643,12 @@ export default {
   },
   fund: {
     title: "基金会地址",
-    totalBalance: "自由金总余额",
-    totalLocked: "锁仓金总余额",
+    totalBalance: "自由金总余额 (ATP)",
+    totalLocked: "锁仓金总余额 (ATP)",
     pageTotal: `总计 <b class="black">{0}</b> 个地址`,
     tAddress: "地址",
-    tBalance: "自由金余额 (LAT)",
-    tLockedBalance: "锁仓金余额 (LAT)"
+    tBalance: "自由金余额 (ATP)",
+    tLockedBalance: "锁仓金余额 (ATP)"
   },
   ...zhLocale
 };
