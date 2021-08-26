@@ -620,7 +620,7 @@ export default {
     其中，锁定的Token，包含节点质押与委托的Token，以及通过锁仓合约锁定的Token。`,
     totalSupply:`已经创造出来的Token数量减去已销毁的Token数量。<br />
     总发行量 = <img style="display:inline-block; height: 14px;" src="/static/images/total-supply.svg" /><br />
-    其中 W为初始发行100亿，n为当前增发周期序号，创世区块开始序号为1，a%为增发比例，当前为2.5%`,
+    其中 W为初始发行100亿，n为当前增发周期序号，创世区块开始序号为1，a%为增发比例，当前为5%`,
     totalStakePower: `参与Staking的Token数，包含节点质押金和接收的委托。<br />
     总质押 =  Staking合约地址余额（atp1zqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqzfyslg3）`,
     stakeRate: `参与Staking的Token占总可质押Token的比例，其中可质押Token包含锁仓合约锁定的Token。<br />
