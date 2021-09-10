@@ -42,7 +42,7 @@
                 active:
                   $route.path.indexOf('block') > -1 ||
                   $route.path.indexOf('trade') > -1 ||
-                  $route.path.indexOf('address') > -1,
+                  $route.path.indexOf('/address') > -1,
               }"
               >{{ $t('menu.blockChain') }}
               <i
@@ -121,7 +121,8 @@
               :class="{
                 active:
                   $route.path.indexOf('governable-parameter') > -1 ||
-                  $route.path.indexOf('proposal') > -1,
+                  $route.path.indexOf('proposal') > -1 ||
+                  $route.path.indexOf('/foundation-address') > -1,
               }"
               >{{ $t('menu.more') }}
               <i
