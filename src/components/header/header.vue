@@ -17,7 +17,7 @@
         active-text-color="#FFF"
       >
         <el-menu-item index="/" :class="{ active: $route.path == '/' }">
-          <router-link to="/">{{ $t('menu.home') }}</router-link>
+          {{ $t('menu.home') }}
         </el-menu-item>
         <el-menu-item
           index="/node"
@@ -25,7 +25,7 @@
             active: $route.path.indexOf('node') > -1,
           }"
         >
-          <router-link to="/node">{{ $t('menu.validator') }}</router-link>
+          {{ $t('menu.validator') }}
         </el-menu-item>
 
         <el-menu-item class="more-item">
