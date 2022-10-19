@@ -657,7 +657,7 @@ export default {
     Tokens in the Incentive Pool includes tokens in the incentive pool contract and unclaimed staking rewards (tokens).`,
     totalSupply:`The number of tokens that have been created minus the number of tokens that have been burned.<br />
     Total Supply = <img style="display:inline-block; height: 14px;" src="/static/images/total-supply.svg" /><br />
-    Where W is the initial issued amount of 10 billion, n is the serial number of the current issuance cycle, 1 is the starting serial number of the genesis block, and a% is the additional issuance ratio, which is at 5% currently.`,
+    Where W is the initial issued amount of 0.1 billion, n is the serial number of the current issuance cycle, 1 is the starting serial number of the genesis block, and a% is the additional issuance ratio, which is at 5% currently.`,
     totalStakePower: `The number of tokens staked, including the tokens staked by nodes and total delegations.<br />
     Total Stakes = Balance of the Staking Contract Address (atp1zqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqzfyslg3)`,
     stakeRate: `The proportion of tokens staked to the total tokens that can be staked, the latter including the tokens locked in the lockup contract.<br />
